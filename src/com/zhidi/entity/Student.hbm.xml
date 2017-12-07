@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- 实体和数据库表的映射 -->
+<hibernate-mapping>
+	<class name="com.zhidi.entity.Student" table="tb_student">
+		<!-- 主键字段 -->
+		<id name="stuId" column="id">
+			<!-- 主键生成策略 -->
+			<generator class="native"/>
+		</id>
+		<!-- 非主键属性 -->
+		<property name="stuName" column="stu_name"/>
+		<property name="stuAge" column="stu_age"/>
+	</class>
+</hibernate-mapping>
